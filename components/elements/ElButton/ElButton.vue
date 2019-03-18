@@ -31,9 +31,7 @@
 </template>
 
 <script>
-import BallClipRotateMultipleLoader from 'vue-loaders/src/loaders/ball-clip-rotate-multiple'
 export default {
-  components: { BallClipRotateMultipleLoader },
   props: {
     to: {
       type: [String, Object],
