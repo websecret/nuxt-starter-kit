@@ -45,7 +45,12 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/svg-sprite',
+    '@nuxtjs/moment',
   ],
+  moment: {
+    locales: ['ru'],
+    defaultLocale: 'ru',
+  },
   /*
    ** Axios module configuration
    */

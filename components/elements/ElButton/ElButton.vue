@@ -200,6 +200,7 @@ export default {
     height: 100%;
     line-height: inherit;
     background: rgba(255, 255, 255, 0.8);
+    border-radius: inherit;
     .vue-loaders {
       top: 50%;
       margin-top: -8px;

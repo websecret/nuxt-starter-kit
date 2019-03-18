@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/moment": "^1.2.0",
     "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/svg-sprite": "^0.2.0",
     "cross-env": "^5.2.0",
@@ -23,6 +24,7 @@
     "normalize-scss": "^7.0.1",
     "nuxt": "^2.4.0",
     "sass-loader": "^7.1.0",
+    "v-click-outside": "^2.0.2",
     "vue-loaders": "^2.0.0"
   },
   "devDependencies": {
