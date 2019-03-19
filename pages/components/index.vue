@@ -3,6 +3,7 @@
     <el-button :to="{ name: 'components-index-heading' }">Heading</el-button>
     <el-button :to="{ name: 'components-index-button' }">Button</el-button>
     <el-button :to="{ name: 'components-index-input' }">Input</el-button>
+    <el-button :to="{ name: 'components-index-select' }">Select</el-button>
     <el-button :to="{ name: 'components-index-dropdown' }">Dropdown</el-button>
     <el-button :to="{ name: 'components-index-breadcrumbs' }">
       Breadcrumbs
