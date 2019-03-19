@@ -4,6 +4,9 @@
     :value="_value"
     @input="e => change(e.target.value)"
   >
+    <option v-if="allowNull" :value="null">
+      -Не выбран-
+    </option>
     <option
       v-for="option in options"
       :key="option[objectValue]"
@@ -35,6 +38,10 @@ export default {
     objectValue: {
       type: String,
       default: 'value',
+    },
+    allowNull: {
+      type: Boolean,
+      default: true,
     },
   },
   computed: {
