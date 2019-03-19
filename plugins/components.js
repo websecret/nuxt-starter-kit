@@ -16,6 +16,7 @@ import ElHeading from './../components/elements/ElHeading'
 import ElButton from './../components/elements/ElButton'
 import ElInput from './../components/elements/ElInput'
 import ElDropdown from './../components/elements/ElDropdown'
+import ElBreadcrumbs from './../components/elements/ElBreadcrumbs'
 
 Vue.use(VueLoaders)
 Vue.use(vClickOutside)
@@ -27,3 +28,4 @@ Vue.use(ElHeading)
 Vue.use(ElButton)
 Vue.use(ElInput)
 Vue.use(ElDropdown)
+Vue.use(ElBreadcrumbs)

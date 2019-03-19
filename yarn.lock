@@ -1159,6 +1159,11 @@
   resolved "https://registry.yarnpkg.com/@nuxtjs/eslint-config/-/eslint-config-0.0.1.tgz#3aeed1cc6a2e01331c7e6b56bfa7152ce8bb2d90"
   integrity sha512-Scz5oYNtVwePF1ebXcWPrFxBpNF5wAkYh8L++6f2ZdLyUb1mCOwzE2+oVZxS25hGCYUyecFEshbqeSwkC+ktqA==
 
+"@nuxtjs/google-gtag@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/google-gtag/-/google-gtag-1.0.4.tgz#57562d8ec4c7694573e77edf72097da4a34b0d68"
+  integrity sha512-0Xgbx1uQ9pKeV2QdU9xoxJVdgH66qyGQJ0l8pzVxz5X476qvJunj6fbcjWk0gT+MEX/VOAhfT/zw0Z1z9q9oNg==
+
 "@nuxtjs/icon@^2.6.0":
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/icon/-/icon-2.6.0.tgz#65295ee059794f01e41a52c4141c06e898e798bc"
@@ -1216,6 +1221,13 @@
     fs-extra "^7.0.1"
     svgo "^1.1.1"
 
+"@nuxtjs/toast@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/toast/-/toast-3.0.2.tgz#6f027fb2210f0f348eb223ac5ad48d50d2369d92"
+  integrity sha512-3x7hovVQt++CRosciz9kzL9i3Xjua5XzZqxSr0pDfrCEoH77yvnTfQ6Wr0jdZOUeHZQaF90gbnD0T8fWyBcp/A==
+  dependencies:
+    vue-toasted "^1.1.26"
+
 "@nuxtjs/workbox@^2.6.0":
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/workbox/-/workbox-2.6.0.tgz#eb057e7cbddc8f50bc181a5af9795cc93bd774d8"
@@ -1223,6 +1235,11 @@
   dependencies:
     lodash "^4.17.11"
     workbox-build "^3.4.1"
+
+"@nuxtjs/yandex-metrika@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/yandex-metrika/-/yandex-metrika-0.1.1.tgz#d921cfdb415c17b8a0b38cdee1725865e549b8b8"
+  integrity sha512-rcyKNlM+9ogPMjoC1vVJXeBuVscxcHGTcuNRLyzrYl+66LCgCVuJh9j26PYDFBZd3uXeYjtbU9dH09wmc1fmmA==
 
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
@@ -8792,6 +8809,11 @@ vue-text-mask@^6.1.2:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/vue-text-mask/-/vue-text-mask-6.1.2.tgz#2cc18a1ca04ea66798518a9373929a12256d14b9"
   integrity sha1-LMGKHKBOpmeYUYqTc5KaEiVtFLk=
+
+vue-toasted@^1.1.26:
+  version "1.1.26"
+  resolved "https://registry.yarnpkg.com/vue-toasted/-/vue-toasted-1.1.26.tgz#1333d1a42157ab78389c3810023a49ba94e69c7b"
+  integrity sha512-Z4/gfPcqdzsRvif7UITrZOkh3C6jm0yQKJyr9kX31IGWXor5dNipE1Sc5SnlL5RLmY7vlLa+SqIjc9Gbpy7V0g==
 
 vue@^2.5.22:
   version "2.6.9"

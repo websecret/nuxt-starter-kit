@@ -2,9 +2,9 @@
   <div class="el-input">
     <textarea
       v-if="type === 'textarea'"
+      v-autosize
       class="el-input__field"
       :placeholder="placeholder"
-      v-autosize
       :value="_value"
       @input="e => change(e.target.value)"
     />

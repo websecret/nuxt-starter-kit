@@ -46,10 +46,25 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/svg-sprite',
     '@nuxtjs/moment',
+    '@nuxtjs/toast',
+    '@nuxtjs/google-gtag',
+    [
+      '@nuxtjs/yandex-metrika',
+      {
+        // id: 'XXXXXX',
+        webvisor: true,
+      },
+    ],
   ],
   moment: {
     locales: ['ru'],
     defaultLocale: 'ru',
+  },
+  toast: {
+    position: 'top-center',
+  },
+  'google-gtag': {
+    // id: 'UA-XXXX-XX', // required
   },
   /*
    ** Axios module configuration
