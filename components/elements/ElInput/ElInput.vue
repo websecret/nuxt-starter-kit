@@ -4,6 +4,7 @@
       v-if="type === 'textarea'"
       class="el-input__field"
       :placeholder="placeholder"
+      v-autosize
       :value="_value"
       @input="e => change(e.target.value)"
     />
