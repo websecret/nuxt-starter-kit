@@ -1,6 +1,9 @@
 <template>
   <div>
+    <el-heading :level="4">Simple</el-heading>
     <el-breadcrumbs :items="items" />
+
+    <el-heading :level="4">Custom Separator</el-heading>
     <el-breadcrumbs :items="items">
       <span slot="separator">
         >

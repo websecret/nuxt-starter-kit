@@ -9,6 +9,7 @@
     <el-button :to="{ name: 'components-index-breadcrumbs' }">
       Breadcrumbs
     </el-button>
+    <el-button :to="{ name: 'components-index-tabs' }">Tabs</el-button>
     <hr style="margin: 20px 0" />
     <nuxt-child></nuxt-child>
   </section>

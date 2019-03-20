@@ -19,6 +19,7 @@ import ElSelect from './../components/elements/ElSelect'
 import ElCheck from './../components/elements/ElCheck'
 import ElDropdown from './../components/elements/ElDropdown'
 import ElBreadcrumbs from './../components/elements/ElBreadcrumbs'
+import ElTabs from './../components/elements/ElTabs'
 
 Vue.use(VueLoaders)
 Vue.use(vClickOutside)
@@ -33,3 +34,4 @@ Vue.use(ElSelect)
 Vue.use(ElCheck)
 Vue.use(ElDropdown)
 Vue.use(ElBreadcrumbs)
+Vue.use(ElTabs)

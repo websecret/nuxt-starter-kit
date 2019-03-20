@@ -1,9 +1,14 @@
 <template>
   <div>
+    <el-heading :level="4">Simple</el-heading>
     <el-select v-model="value" :options="options" />
     {{ value }}
+
+    <el-heading :level="4">Object</el-heading>
     <el-select v-model="valueObject" :options="options" :by-object="true" />
     {{ valueObject }}
+
+    <el-heading :level="4">Object Custom Fields</el-heading>
     <el-select
       v-model="valueOtherObject"
       :options="otherOptions"
