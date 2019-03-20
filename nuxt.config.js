@@ -35,7 +35,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/components'],
+  plugins: ['~/plugins/components', '~/plugins/axios', '~/plugins/api'],
 
   /*
    ** Nuxt.js modules
@@ -57,6 +57,20 @@ module.exports = {
       },
     ],
   ],
+  axios: {
+    credentials: true,
+    proxyHeadersIgnore: [
+      'host',
+      'accept',
+      'cf-connecting-ip',
+      '__cfduid',
+      'cf-ray',
+      'cf-ipcountry',
+      'cf-visitor',
+      'cf_use_ob',
+      'x-forwarded-for',
+    ],
+  },
   moment: {
     locales: ['ru'],
     defaultLocale: 'ru',
@@ -70,9 +84,6 @@ module.exports = {
   /*
    ** Axios module configuration
    */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
 
   /*
    ** Build configuration

@@ -4,7 +4,7 @@ import ElModalContainer from './ElModalContainer'
 import ElModal from './ElModal'
 
 const plugin = {
-  install(Vue, options = {}) {
+  install(Vue) {
     if (process.client) {
       const container = mount()
       Vue.prototype.$modal = container
@@ -36,14 +36,23 @@ const mount = () => {
     parent: null,
     methods: {
       show(name, params) {
-        const modal = this.$children[0].$children[0].passengers.find(p => {
-          return p.context.name === name
-        })
+        const modal = this.find(name)
         if (modal) {
           modal.context.show(params)
         } else {
           console.error('Modal not found')
         }
+      },
+      hide() {
+        const modal = this.find(name)
+        if (modal) {
+          modal.context.hide()
+        }
+      },
+      find(name) {
+        return this.$children[0].$children[0].passengers.find(p => {
+          return p.context.name === name
+        })
       },
     },
     render: h => h(ElModalContainer),
