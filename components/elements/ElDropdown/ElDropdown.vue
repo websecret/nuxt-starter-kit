@@ -5,7 +5,6 @@
     :class="classes"
     @click="handleClick"
   >
-    {{ isSelect }}
     <slot name="activator">
       <el-button>{{ _value }}</el-button>
     </slot>
