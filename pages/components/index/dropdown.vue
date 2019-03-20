@@ -34,8 +34,13 @@ export default {
           value: 1,
           to: { name: 'components-index-dropdown' },
         },
-        { name: 'Value 2', value: 2, to: '/' },
+        {
+          name: 'Value 2',
+          value: 2,
+          to: { name: 'components-index-dropdown' },
+        },
         { name: 'Value 3', value: 3, to: '/' },
+        { name: 'Value 4', value: 4, to: '/' },
       ],
     }
   },
