@@ -10,6 +10,7 @@
       Breadcrumbs
     </el-button>
     <el-button :to="{ name: 'components-index-tabs' }">Tabs</el-button>
+    <el-button :to="{ name: 'components-index-modal' }">Modal</el-button>
     <hr style="margin: 20px 0" />
     <nuxt-child></nuxt-child>
   </section>

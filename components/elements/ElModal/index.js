@@ -1,0 +1,53 @@
+import Vue from 'vue'
+
+import ElModalContainer from './ElModalContainer'
+import ElModal from './ElModal'
+
+const plugin = {
+  install(Vue, options = {}) {
+    if (process.client) {
+      const container = mount()
+      Vue.prototype.$modal = container
+
+      Vue.directive('modal', {
+        bind(el, binding) {
+          el.addEventListener('click', () => {
+            let name = binding.value
+            let params = null
+            if (typeof name === 'object') {
+              params = name.params
+              name = name.name
+            }
+            container.show(name, params)
+          })
+        },
+      })
+    }
+
+    Vue.component('el-modal', ElModal)
+  },
+}
+
+const mount = () => {
+  const modalsContainer = document.createElement('div')
+  document.body.appendChild(modalsContainer)
+
+  return new Vue({
+    parent: null,
+    methods: {
+      show(name, params) {
+        const modal = this.$children[0].$children[0].passengers.find(p => {
+          return p.context.name === name
+        })
+        if (modal) {
+          modal.context.show(params)
+        } else {
+          console.error('Modal not found')
+        }
+      },
+    },
+    render: h => h(ElModalContainer),
+  }).$mount(modalsContainer)
+}
+
+export default plugin

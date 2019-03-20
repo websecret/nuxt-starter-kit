@@ -35,7 +35,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/components', ssr: true }],
+  plugins: ['~/plugins/components'],
 
   /*
    ** Nuxt.js modules
@@ -45,6 +45,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/svg-sprite',
+    'portal-vue/nuxt',
     '@nuxtjs/moment',
     '@nuxtjs/toast',
     '@nuxtjs/google-gtag',
