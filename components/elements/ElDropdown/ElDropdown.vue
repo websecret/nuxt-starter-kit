@@ -5,8 +5,9 @@
     :class="classes"
     @click="handleClick"
   >
+    {{ isSelect }}
     <slot name="activator">
-      <el-button>{{ name }}</el-button>
+      <el-button>{{ _value }}</el-button>
     </slot>
     <div class="el-dropdown__menu">
       <slot>
@@ -14,6 +15,7 @@
           v-for="(item, index) in items"
           :key="index"
           v-bind="item"
+          @click.native="handleItemClick(item)"
         >
           {{ item.name }}
         </el-dropdown-item>
@@ -25,6 +27,9 @@
 <script>
 export default {
   props: {
+    value: {
+      default: null,
+    },
     name: {
       type: String,
       default: null,
@@ -46,6 +51,18 @@ export default {
         'el-dropdown--opened': this.opened,
       }
     },
+    isSelect() {
+      return this.$options.propsData.hasOwnProperty('value')
+    },
+    _value() {
+      if (this.isSelect) {
+        const value = this.items.find(i => i.value === this.value)
+        if (value !== null) {
+          return value.name
+        }
+      }
+      return this.name
+    },
   },
 
   methods: {
@@ -60,6 +77,11 @@ export default {
     },
     close() {
       this.opened = false
+    },
+    handleItemClick(item) {
+      if (this.isSelect) {
+        this.$emit('input', item.value)
+      }
     },
   },
 }
