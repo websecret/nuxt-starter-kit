@@ -1,10 +1,12 @@
-import ElCheckboxes from './ElCheckboxes'
+import ElCheck from './ElCheck'
 import ElCheckbox from './ElCheckbox'
+import ElRadio from './ElRadio'
 
 const plugin = {
   install: function(Vue) {
+    Vue.component('el-radio', ElRadio)
     Vue.component('el-checkbox', ElCheckbox)
-    Vue.component('el-checkboxes', ElCheckboxes)
+    Vue.component('el-check', ElCheck)
   },
 }
 

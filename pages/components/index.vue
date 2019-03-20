@@ -4,7 +4,7 @@
     <el-button :to="{ name: 'components-index-button' }">Button</el-button>
     <el-button :to="{ name: 'components-index-input' }">Input</el-button>
     <el-button :to="{ name: 'components-index-select' }">Select</el-button>
-    <el-button :to="{ name: 'components-index-checkbox' }">Checkbox</el-button>
+    <el-button :to="{ name: 'components-index-check' }">Check</el-button>
     <el-button :to="{ name: 'components-index-dropdown' }">Dropdown</el-button>
     <el-button :to="{ name: 'components-index-breadcrumbs' }">
       Breadcrumbs

@@ -16,7 +16,7 @@ import ElHeading from './../components/elements/ElHeading'
 import ElButton from './../components/elements/ElButton'
 import ElInput from './../components/elements/ElInput'
 import ElSelect from './../components/elements/ElSelect'
-import ElCheckbox from './../components/elements/ElCheckbox'
+import ElCheck from './../components/elements/ElCheck'
 import ElDropdown from './../components/elements/ElDropdown'
 import ElBreadcrumbs from './../components/elements/ElBreadcrumbs'
 
@@ -30,6 +30,6 @@ Vue.use(ElHeading)
 Vue.use(ElButton)
 Vue.use(ElInput)
 Vue.use(ElSelect)
-Vue.use(ElCheckbox)
+Vue.use(ElCheck)
 Vue.use(ElDropdown)
 Vue.use(ElBreadcrumbs)
